@@ -17,3 +17,7 @@ output "private_subnets" {
       "${aws_subnet.private3.id}",
       ]
 }
+
+output "region" {
+    value = "${var.region}"
+}
