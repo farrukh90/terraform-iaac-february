@@ -1,4 +1,3 @@
-
 resource "aws_subnet" "private1" {
   vpc_id            = "${aws_vpc.main.id}"
   cidr_block        = "${var.private_cidr1}"

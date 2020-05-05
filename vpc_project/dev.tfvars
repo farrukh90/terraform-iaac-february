@@ -1,5 +1,5 @@
-region                      =   "us-west-2"
-region_name                 =   "oregon"
+region                      =   "us-east-1"
+region_name                 =   "virginia"
 vpc_cidr                    =   "10.0.0.0/16"
 
 public_cidr1                =   "10.0.101.0/24"

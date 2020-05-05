@@ -1,4 +1,3 @@
-
 resource "aws_route_table" "r" {
   vpc_id = "${aws_vpc.main.id}"
 
@@ -36,9 +35,8 @@ resource "aws_eip" "nat" {
   tags = "${var.tags}"
 }
 
-resource "aws_nat_gateway" "gw" {
-  allocation_id = "${aws_eip.nat.id}"
-  subnet_id     = "${aws_subnet.public1.id}"
-  tags   = "${var.tags}"
-
-}
+# resource "aws_nat_gateway" "gw" {
+#   allocation_id = "${aws_eip.nat.id}"
+#   subnet_id     = "${aws_subnet.public1.id}"
+#   tags          = "${var.tags}"
+# }

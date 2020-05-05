@@ -1,10 +1,9 @@
-
 resource "aws_subnet" "public1" {
-  vpc_id                  = "${aws_vpc.main.id}"            # Gets VPC ID
-  cidr_block              = "${var.public_cidr1}"           # Gets user  cidr block
-  availability_zone       = "${var.region}${var.az1}"       # Puts into az
-  map_public_ip_on_launch = true                            # Gets Public IP automatically
-  tags                    = "${var.tags}"                   # attaches tags
+  vpc_id                  = "${aws_vpc.main.id}"      # Gets VPC ID
+  cidr_block              = "${var.public_cidr1}"     # Gets user  cidr block
+  availability_zone       = "${var.region}${var.az1}" # Puts into az
+  map_public_ip_on_launch = true                      # Gets Public IP automatically
+  tags                    = "${var.tags}"             # attaches tags
 }
 
 resource "aws_subnet" "public2" {
